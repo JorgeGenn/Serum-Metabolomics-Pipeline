@@ -1,5 +1,24 @@
 # Semi-Untargeted UPLC-TQ/MS Serum Metabolomics Pipeline 
 
+[![Platform](https://img.shields.io/badge/Platform-UPLC--MS%2FMS%20(Waters%20Xevo%20TQ--S)-blue)](#)
+[![Software](https://img.shields.io/badge/Software-MS--DIAL%20v4.92%20%7C%20MetaboAnalyst%206.0-orange)](#)
+[![Institutions](https://img.shields.io/badge/Institutions-UACM%20%7C%20INPer%20%7C%20INGER-green)](#)
+
+## 📌 Overview
+This repository details the bioinformatics protocol and analytical pipeline for semi-untargeted metabolomic processing of human serum samples acquired via **UPLC-TQ-MS/MS (Waters Xevo TQ-S)**. 
+
+The analytical workflow addresses low-resolution MS1 centroid data processing, peak detection, retention time alignment, adduct selection, batch correction, and covariate-adjusted statistical analysis (limma/ANOVA) for cognitive impairment research.
+
+---
+
+## 🔬 Experimental Setup & Acquisition
+- **Instrumentation:** Waters ACQUITY UPLC coupled to Xevo TQ-S Mass Spectrometer (ESI+ mode).
+- **Stationary Phase:** ACQUITY UPLC BEH Amide Column (1.7 µm, 2.1 x 100 mm).
+- **Mobile Phase:** Ammonium Formate (10 mM, pH buffer) & Acetonitrile (LC-MS Grade).
+- **Data Acquisition Mode:** Precursor ion scan / MS1 centroid mode (50–2000 Da range).
+
+## 🛠️ Bioinformatics Protocol
+
 ### 1. File Conversion
 - Convert vendor `.RAW` files to open formats (`.mzML` or `.abf`) using **ProteoWizard MSConvert** (Vendor peak picking enabled on MS1)
 
