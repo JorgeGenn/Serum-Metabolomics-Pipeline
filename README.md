@@ -21,8 +21,11 @@
 
 ## 🔒 Data Availability
 Due to ethical constraints and patient privacy regulations regarding clinical serum samples, raw spectral files (`.RAW`) are restricted. 
+
+- **Demo Data:** A template metadata file (`metadata_example.csv`) and processed peak intensity matrix are provided in `/data` for pipeline evaluation.
+- **Data Access:** De-identified data can be made available upon reasonable request through a Data Use Agreement (DUA).
 ---
 
 ## ✍️ Authors & Affiliations
 - **Jorge Hurtado Soriano** — Universidad Autónoma de la Ciudad de México (UACM) / Instituto Nacional de Geriatría (INGER) / INPer.
-- **Selma Karime Castillo Vásquez**.
+- **Selma Karime Castillo Vásquez** Universidad Nacional Autónoma de México (UNAM).
