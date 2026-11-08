@@ -43,7 +43,7 @@ The analytical workflow addresses low-resolution MS1 centroid data processing, p
 ## 🔒 Data Availability
 Due to ethical constraints and patient privacy regulations regarding clinical serum samples, raw spectral files (`.RAW`) are restricted. 
 
-- **Demo Data:** A template metadata file (`metadata_example.csv`) and processed peak intensity matrix are provided in `/data` for pipeline evaluation.
+- **Demo Data:** A template metadata file (`bath_data.csv and metaData.csv`) and processed peak intensity matrix are provided in `/data` for pipeline evaluation.
 - **Data Access:** De-identified data can be made available upon reasonable request through a Data Use Agreement (DUA).
 
 ---
