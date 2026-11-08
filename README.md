@@ -1,4 +1,4 @@
-# Semi-Untargeted UPLC-TQ/MS Serum Metabolomics Pipeline 
+# Semi-Untargeted UPLC-TQ/MS Serum Metabolomics Pipeline
 
 [![Platform](https://img.shields.io/badge/Platform-UPLC--MS%2FMS%20(Waters%20Xevo%20TQ--S)-blue)](#)
 [![Software](https://img.shields.io/badge/Software-MS--DIAL%20v4.92%20%7C%20MetaboAnalyst%206.0-orange)](#)
@@ -17,12 +17,14 @@ The analytical workflow addresses low-resolution MS1 centroid data processing, p
 - **Mobile Phase:** Ammonium Formate (10 mM, pH buffer) & Acetonitrile (LC-MS Grade).
 - **Data Acquisition Mode:** Precursor ion scan / MS1 centroid mode (50–2000 Da range).
 
+---
+
 ## 🛠️ Bioinformatics Protocol
 
 ### 1. File Conversion
-- Convert vendor `.RAW` files to open formats (`.mzML` or `.abf`) using **ProteoWizard MSConvert** (Vendor peak picking enabled on MS1)
+- Convert vendor `.RAW` files to open formats (`.mzML` or `.abf`) using **ProteoWizard MSConvert** (Vendor peak picking enabled on MS1).
 
-- ### 2. MS-DIAL Processing Parameters (v4.92)
+### 2. MS-DIAL Processing Parameters (v4.92)
 - **Data Type:** Soft ionization (LC-MS) | Centroid data (MS1) | ESI Positive.
 - **Peak Detection:** Minimum peak height: 3000 amplitude; Mass slice width: 0.1 Da.
 - **Smoothing:** Linear-weighted moving average (level 1, min peak width: 5 scans).
@@ -30,7 +32,7 @@ The analytical workflow addresses low-resolution MS1 centroid data processing, p
 - **Adducts Included:** `[M+H]+`, `[M+Na]+`, `[M+NH4]+`, `[M+K]+`, `[2M+H]+`, among others.
 - **Alignment:** QC-based alignment with RT tolerance of 0.05 min and MS1 tolerance of 0.015 Da. Blank subtraction enabled.
 
-- ### 3. Statistical Analysis & Quality Control (MetaboAnalyst 6.0)
+### 3. Statistical Analysis & Quality Control (MetaboAnalyst 6.0)
 - **Technical Replicates:** Merged using arithmetic mean (`Merging Technical Replicates`).
 - **Batch Correction & Normalization:** Normalized by sum, square root transformation, and mean centering.
 - **Filtering:** RSD > 20% filter applied on QC samples.
@@ -43,8 +45,9 @@ Due to ethical constraints and patient privacy regulations regarding clinical se
 
 - **Demo Data:** A template metadata file (`metadata_example.csv`) and processed peak intensity matrix are provided in `/data` for pipeline evaluation.
 - **Data Access:** De-identified data can be made available upon reasonable request through a Data Use Agreement (DUA).
+
 ---
 
 ## ✍️ Authors & Affiliations
 - **Jorge Hurtado Soriano** — Universidad Autónoma de la Ciudad de México (UACM) / Instituto Nacional de Geriatría (INGER) / INPer.
-- **Selma Karime Castillo Vásquez** Universidad Nacional Autónoma de México (UNAM).
+- **Selma Karime Castillo Vásquez** — Universidad Nacional Autónoma de México (UNAM) / Instituto Nacional de Geriatría (INGER) / INPer.
